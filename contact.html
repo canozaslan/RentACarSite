@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Araba Sitesi</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="page">
+      <!--Start navigation bar codes-->
+      <div class="topnav">
+        <div class="brand">
+          <a href="index.html" id="brand"
+            ><img src="images/logo2.png" alt="Ana sayfaya git" height="100px"
+          /></a>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Sayfada ara..." name="search" />
+          <button type="submit" style="outline: none">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <div class="navbar">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="products.html">Ürünlerimiz</a>
+          <div class="dropdown">
+            <button class="dropbtn">Araç Kirala
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" style="background-color: #333;">
+              <a href="highsegment.html" style="color: white;">Yüksek segment</a>
+              <a href="middlesegment.html" style="color: white;">Orta segment</a>
+              <a href="lowsegment.html" style="color: white;">Düşük segment</a>
+            </div>
+          </div>
+          <a href="about.html">Hakkımızda</a>
+          <a href="contact.html">İletişim</a>
+        </div>
+      </div>
+      <!--End navigation bar codes-->
+      <div class="contents">
+        <!--Start left magazine bar codes-->
+       
+        <!--End left magazine bar codes-->
+        <div class="main-content">
+       
+            <div class="container">
+                <div style="text-align:center">
+                  <h1 style="padding-left: 25px;">İletişim</h1>
+                  <hr style="border-top: 2px solid #333; width: 98%; margin: auto;">
+                  <p style="padding-top: 20px;">Bir çayımızı içmek için uğrayın, ya da bize bir mesaj bırakın:</p>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img src="images/contactus.png" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <form action="/action_page.php">
+                      <label for="fname">Adınız</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Adınızı girin...">
+                      <label for="lname">Soyadınız</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Soyadınızı girin...">
+                      <label for="city">Şehir</label>
+                      <select id="city" name="city">
+                        <option value="bursa">Bursa</option>
+                        <option value="ankara">Ankara</option>
+                        <option value="istanbul">İstanbul</option>
+                        <option value="izmir">İzmir</option>
+                        <option value="manisa">Manisa</option>
+                        <option value="antalya">antalya</option>
+                        <option value="nevsehir">Nevşehir</option>
+                        <option value="adana">Adana</option>
+                        <option value="diyarbakir">Diyarbakır</option>
+                      </select>
+                      <label for="subject">Konu</label>
+                      <textarea id="subject" name="subject" placeholder="Lütfen mesajınızı yazınız..." style="height:170px"></textarea>
+                      <input type="submit" value="Gönder">
+                    </form>
+                  </div>
+                </div>
+              </div>
+          
+        </div>
+
+        <!--Start side social bar codes-->
+       
+        <!--End side social bar codes-->
+      </div>
+      <!--Start footer codes-->
+      <div>
+        <footer>
+          <div class="left-footer">
+            <h4>Detaylı bilgi için bize ulaşın...</h4>
+            <p>Adres : ÜSKÜDAR CAD.BEYDAĞI APT.NO:44 D:3 KARTAL İSTANBUL</p>
+            <p>Telefon : +90 216 3875372</p>
+          </div>
+            <div class="right-footer">
+              <h6>© 2021 arabakirala.com</h6>
+              <div class="right-content">
+                <div class="icon-bar">
+                  <div class="face"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></div>
+                  <div class="twit"><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></div>
+                  <div class="insta"><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></div>
+                  <div class="linked"><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></div>
+                  <div class="ytube"><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></div>
+                  
+                </div>
+              </div>
+            </div>
+        </footer>
+      </div>
+      <!--End footer codes-->
+    </div>
+
+  </body>
+</html>
